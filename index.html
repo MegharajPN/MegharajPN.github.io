@@ -1,218 +1,211 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Megharaj P N | Full Stack Developer (PHP / Laravel / Vue / React)</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #0b0f19; color: #e2e8f0; }
-        .mono { font-family: 'Fira Code', monospace; }
-        .glass { background: rgba(30, 41, 59, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
-        .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Megharaj P N | Full Stack Developer (PHP, Laravel, Python, Django, AI)</title>
+<meta name="description" content="Full Stack Developer with 5+ years of experience in PHP, Laravel, Django REST, Vue.js, React.js and LLM/RAG. Available immediately in Bengaluru, India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<style>
+:root{--bg:#f6f8fb;--bg2:#ffffff;--glass:rgba(255,255,255,.72);--text:#16202b;--muted:#566474;--line:rgba(15,42,71,.12);--a:#0b8793;--b:#4f46e5;--c:#9333ea;--ok:#059669;--shadow:0 18px 40px rgba(15,42,71,.12);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0f19;--bg2:#121a2b;--glass:rgba(22,31,50,.66);--text:#e6ecf5;--muted:#9aa8bb;--line:rgba(255,255,255,.1);--a:#3fd8e6;--b:#8b93ff;--c:#c084fc;--ok:#34d399;--shadow:0 18px 44px rgba(0,0,0,.45)}}
+:root[data-theme="dark"]{--bg:#0b0f19;--bg2:#121a2b;--glass:rgba(22,31,50,.66);--text:#e6ecf5;--muted:#9aa8bb;--line:rgba(255,255,255,.1);--a:#3fd8e6;--b:#8b93ff;--c:#c084fc;--ok:#34d399;--shadow:0 18px 44px rgba(0,0,0,.45)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Inter',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;line-height:1.6;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+.mono{font-family:'Fira Code',ui-monospace,Menlo,Consolas,monospace}
+a{color:inherit;text-decoration:none}.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);background:var(--glass);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:700;color:var(--a)}nav{display:flex;gap:26px;font-size:14px;font-weight:500;color:var(--muted)}nav a:hover{color:var(--a)}
+.hbtns{display:flex;gap:10px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:12px;font-weight:600;font-size:14px;border:1px solid var(--line);background:var(--glass);cursor:pointer;color:var(--text);font-family:inherit;transition:.25s}
+.btn:hover{transform:translateY(-2px);border-color:var(--a)}
+.btn.p{background:linear-gradient(90deg,var(--a),var(--b));color:#fff;border:0;box-shadow:0 10px 24px rgba(79,70,229,.3)}
+#hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;padding:110px 0 60px}
+#bg{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+#hero .wrap{position:relative;z-index:1}
+.badge{display:inline-flex;gap:8px;align-items:center;padding:6px 14px;border-radius:99px;font-size:12.5px;font-weight:600;color:var(--ok);border:1px solid var(--ok);background:var(--glass);margin-bottom:22px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ok);animation:pulse 1.6s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(5,150,105,.6)}100%{box-shadow:0 0 0 10px rgba(5,150,105,0)}}
+h1{font-size:clamp(40px,7vw,78px);line-height:1.04;margin:0 0 14px;font-weight:800;letter-spacing:-.03em}
+.grad{background:linear-gradient(90deg,var(--a),var(--b),var(--c));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.role{font-size:clamp(15px,2.2vw,19px);color:var(--a);min-height:30px;margin-bottom:16px}
+.cur{display:inline-block;width:2px;height:1.1em;background:var(--a);vertical-align:middle;margin-left:2px;animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
+.lead{max-width:640px;color:var(--muted);font-size:17px;margin:0 0 28px}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px;max-width:760px}
+.stat{padding:18px 14px;border-radius:16px;background:var(--glass);border:1px solid var(--line);backdrop-filter:blur(10px);text-align:center}
+.stat b{display:block;font-size:26px;color:var(--a)}.stat span{font-size:12px;color:var(--muted)}
+section{padding:84px 0;position:relative}
+h2{font-size:clamp(26px,4vw,36px);margin:0 0 6px;font-weight:800;letter-spacing:-.02em}
+h2 i{font-style:normal;color:var(--a);font-family:'Fira Code',monospace;font-size:.6em;margin-right:10px}
+.sub{color:var(--muted);margin:0 0 36px;max-width:680px}
+.card{background:var(--glass);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--shadow);backdrop-filter:blur(10px)}
+.tilt{transform-style:preserve-3d;transition:transform .15s ease-out,border-color .25s;will-change:transform}
+.tilt:hover{border-color:var(--a)}.tilt>*{transform:translateZ(22px)}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card h3{margin:0 0 4px;font-size:18px}.card .tech{font-size:12px;color:var(--a);margin:0 0 10px}
+.card p{margin:0;color:var(--muted);font-size:14.5px}.card ul{margin:10px 0 0;padding-left:18px;color:var(--muted);font-size:14px}.card li{margin-bottom:5px}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.chip{font-size:12px;padding:4px 11px;border-radius:99px;border:1px solid var(--line);background:var(--bg2);color:var(--text)}
+.skills{display:grid;grid-template-columns:1.1fr 1fr;gap:34px;align-items:center}
+.scene{perspective:900px;height:300px;display:flex;align-items:center;justify-content:center}
+.cube{width:150px;height:150px;position:relative;transform-style:preserve-3d;animation:spin 18s linear infinite}
+.scene:hover .cube{animation-play-state:paused}
+.face{position:absolute;width:150px;height:150px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;color:#fff;border-radius:14px;border:1px solid rgba(255,255,255,.35);backface-visibility:visible;opacity:.93}
+.f1{transform:translateZ(75px);background:linear-gradient(135deg,#777bb3,#4f5b93)}.f2{transform:rotateY(90deg) translateZ(75px);background:linear-gradient(135deg,#ff5a4d,#c0291d)}
+.f3{transform:rotateY(180deg) translateZ(75px);background:linear-gradient(135deg,#3776ab,#1f4a73)}.f4{transform:rotateY(-90deg) translateZ(75px);background:linear-gradient(135deg,#2a8f6b,#0c4b33)}
+.f5{transform:rotateX(90deg) translateZ(75px);background:linear-gradient(135deg,#41b883,#2c7a58)}.f6{transform:rotateX(-90deg) translateZ(75px);background:linear-gradient(135deg,#0ea5c6,#0b5f78)}
+@keyframes spin{from{transform:rotateX(-18deg) rotateY(0)}to{transform:rotateX(-18deg) rotateY(360deg)}}
+.skgrid{display:grid;gap:14px}.skgrid .card{padding:16px 18px}.skgrid h3{font-size:14px;color:var(--a);margin-bottom:2px}
+.tl{border-left:2px solid var(--line);margin-left:8px;padding-left:28px;display:grid;gap:26px}
+.job{position:relative}.job::before{content:"";position:absolute;left:-37px;top:26px;width:14px;height:14px;border-radius:50%;background:var(--a);border:3px solid var(--bg);box-shadow:0 0 0 2px var(--a)}
+.jh{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px;margin-bottom:6px}
+.jh h3{margin:0;font-size:18px}.jh h3 span{color:var(--a)}.date{font-size:12.5px;color:var(--muted)}
+.ai{background:linear-gradient(135deg,rgba(14,154,167,.16),rgba(147,51,234,.14)),var(--glass)}
+.ai .grid3{margin-top:18px}.ai .card{box-shadow:none;background:var(--bg2)}
+.ci{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.ci a{padding:18px;border-radius:16px;background:var(--glass);border:1px solid var(--line);font-size:14px;word-break:break-word;transition:.25s}
+.ci a:hover{transform:translateY(-4px);border-color:var(--a)}.ci small{display:block;color:var(--muted);font-size:12px;margin-bottom:4px}
+footer{padding:34px 0;text-align:center;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(max-width:860px){nav{display:none}.grid2,.grid3,.skills{grid-template-columns:1fr}.stats,.ci{grid-template-columns:repeat(2,1fr)}.scene{height:240px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
 </head>
-<body class="antialiased selection:bg-sky-500 selection:text-white">
+<body>
+<header><div class="wrap">
+<a href="#top" class="logo mono">&lt;MegharajPN /&gt;</a>
+<nav><a href="#about">About</a><a href="#skills">Tech Stack</a><a href="#experience">Experience</a><a href="#ai">AI Work</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+<div class="hbtns"><button class="btn" id="theme" aria-label="Toggle light or dark theme">Theme</button><a class="btn p" href="mailto:meghrajdvg.pn253@gmail.com">Hire Me</a></div>
+</div></header>
 
-    <!-- Top Navbar -->
-    <header class="fixed top-0 w-full z-50 glass">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold tracking-tight text-white mono">&lt;MegharajPN /&gt;</a>
-            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
-                <a href="#about" class="hover:text-sky-400 transition">About</a>
-                <a href="#skills" class="hover:text-sky-400 transition">Tech Stack</a>
-                <a href="#experience" class="hover:text-sky-400 transition">Experience</a>
-                <a href="#projects" class="hover:text-sky-400 transition">Projects</a>
-            </nav>
-            <div class="flex items-center space-x-3">
-                <a href="mailto:meghrajdvg.pn253@gmail.com" class="bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold px-4 py-2 rounded-lg text-sm transition shadow-lg shadow-sky-500/20">
-                    Hire Me
-                </a>
-            </div>
-        </div>
-    </header>
+<section id="hero"><canvas id="bg"></canvas><div class="wrap" id="top">
+<div class="badge"><span class="dot"></span>Available to join immediately · Bengaluru, India</div>
+<h1>Megharaj P N<br><span class="grad">Full Stack Engineer</span></h1>
+<div class="role mono"><span id="typed"></span><span class="cur"></span></div>
+<p class="lead">I build, scale and modernize enterprise web applications. 5+ years in <b>PHP and Laravel</b>, 2+ years of <b>Django REST</b>, a React and Vue frontend background, and recent hands-on work shipping <b>LLM and RAG features</b> to real users.</p>
+<div class="row"><a class="btn p" href="#projects">View Projects</a><a class="btn" href="#contact">Contact Me</a><a class="btn" href="https://github.com/MegharajPN" target="_blank" rel="noopener">GitHub</a></div>
+<div class="stats">
+<div class="stat"><b>5+</b><span>Years experience</span></div><div class="stat"><b>3</b><span>Companies, 2 internships</span></div>
+<div class="stat"><b>100+</b><span>Stakeholders served</span></div><div class="stat"><b>LLM</b><span>RAG in production</span></div>
+</div></div></section>
 
-    <!-- Hero Section -->
-    <section id="about" class="pt-32 pb-20 px-6 max-w-6xl mx-auto">
-        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-medium mb-6">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-            <span>Available to Join Immediately (From Oct 16, 2026) • Bengaluru, India</span>
-        </div>
-        <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-4">
-            Megharaj P N <br>
-            <span class="gradient-text">Full Stack Engineer</span>
-        </h1>
-        <p class="mono text-sky-400 text-sm md:text-base mb-6">
-            PHP, Python,Laravel & Django Specialist (5+ Yrs) • Vue.js & React.js • MySQL & AWS • Secondary AI/Python Tooling
-        </p>
-        <p class="text-slate-400 max-w-3xl text-base md:text-lg leading-relaxed mb-8">
-            Full Stack Developer with 5+ years of production experience architecting, building, and scaling enterprise web applications primarily in <strong>PHP and Laravel</strong>, alongside <strong>Vue.js, React.js, and MySQL</strong>. Proven track record of delivering multi-tenant SaaS architectures, LMS platforms, high-volume media pipelines, and cloud-storage integrations across agile teams. Also builds applied AI and Python tooling (Django, FastAPI, LangChain) as a secondary strength.
-        </p>
-        
-        <div class="flex flex-wrap gap-4 text-sm font-medium">
-            <a href="tel:+917019675133" class="glass px-5 py-3 rounded-xl hover:border-sky-500/50 transition flex items-center gap-2">
-                <i class="fa-solid fa-phone text-sky-400"></i> +91 70196 75133
-            </a>
-            <a href="mailto:meghrajdvg.pn253@gmail.com" class="glass px-5 py-3 rounded-xl hover:border-sky-500/50 transition flex items-center gap-2">
-                <i class="fa-solid fa-envelope text-sky-400"></i> meghrajdvg.pn253@gmail.com
-            </a>
-            <a href="https://linkedin.com/in/megharaj-p-n" target="_blank" class="glass px-5 py-3 rounded-xl hover:border-sky-500/50 transition flex items-center gap-2">
-                <i class="fa-brands fa-linkedin text-sky-400"></i> linkedin.com/in/megharaj-p-n
-            </a>
-            <a href="https://github.com/MegharajPN" target="_blank" class="glass px-5 py-3 rounded-xl hover:border-sky-500/50 transition flex items-center gap-2">
-                <i class="fa-brands fa-github text-sky-400"></i> github.com/MegharajPN
-            </a>
-        </div>
-    </section>
+<section id="about"><div class="wrap rv">
+<h2><i>01.</i>About Me</h2>
+<p class="sub">Backend-first engineer who is comfortable across the stack.</p>
+<div class="grid2">
+<div class="card tilt"><h3>What I do</h3><p>I have spent five years building business applications from scratch, optimizing existing code and migrating old projects to cleaner architectures. I work in Laravel and Django REST on the backend and Vue.js or React.js on the frontend, and I care about performance, access control and maintainable code.</p></div>
+<div class="card tilt"><h3>What I am doing now</h3><p>I recently built AI features for a college LMS: a student chatbot grounded in institutional data, and a tool that turns uploaded Excel or Word files into hundreds of exam questions. I am looking for a PHP/Laravel, full stack or Python/Django role where I can own features end to end.</p></div>
+</div></div></section>
 
-    <!-- Technical Skills Section -->
-    <section id="skills" class="py-16 px-6 max-w-6xl mx-auto">
-        <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-            <span class="text-sky-400 mono">01.</span> Technical Expertise
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="glass p-6 rounded-2xl">
-                <div class="text-sky-400 font-semibold mb-2 flex justify-between">
-                    <span>Backend (Primary • 5+ Yrs)</span>
-                    <i class="fa-brands fa-laravel text-xl"></i>
-                </div>
-                <p class="text-slate-300 text-sm leading-relaxed">PHP (7.x / 8.x), Laravel, Lumen, RESTful APIs, SOAP, MVC Architecture, Multi-Tenant SaaS, RBAC</p>
-            </div>
-            <div class="glass p-6 rounded-2xl">
-                <div class="text-indigo-400 font-semibold mb-2 flex justify-between">
-                    <span>Frontend Engineering</span>
-                    <i class="fa-brands fa-react text-xl"></i>
-                </div>
-                <p class="text-slate-300 text-sm leading-relaxed">Vue.js, React.js, JavaScript (ES6+), jQuery, HTML5, CSS3, SCSS, Bootstrap, Responsive Dashboards</p>
-            </div>
-            <div class="glass p-6 rounded-2xl">
-                <div class="text-purple-400 font-semibold mb-2 flex justify-between">
-                    <span>Databases & Storage</span>
-                    <i class="fa-solid fa-database text-xl"></i>
-                </div>
-                <p class="text-slate-300 text-sm leading-relaxed">MySQL, MariaDB, MongoDB, Query Optimization, Schema Design, AWS S3, AWS EC2, MinIO Object Storage</p>
-            </div>
-            <div class="glass p-6 rounded-2xl">
-                <div class="text-emerald-400 font-semibold mb-2 flex justify-between">
-                    <span>Python & AI (Secondary)</span>
-                    <i class="fa-brands fa-python text-xl"></i>
-                </div>
-                <p class="text-slate-300 text-sm leading-relaxed">Python, Django, Django REST Framework, FastAPI, LangChain, LangGraph, RAG Pipelines (Personal & Applied Projects)</p>
-            </div>
-            <div class="glass p-6 rounded-2xl md:col-span-2">
-                <div class="text-amber-400 font-semibold mb-2 flex justify-between">
-                    <span>DevOps, Media & Developer Tools</span>
-                    <i class="fa-solid fa-terminal text-xl"></i>
-                </div>
-                <p class="text-slate-300 text-sm leading-relaxed">Linux Server Administration, Git, GitHub, Postman, VS Code, FFmpeg, Bento4 Video Packaging, Agile/Scrum Workflows</p>
-            </div>
-        </div>
-    </section>
+<section id="skills"><div class="wrap rv">
+<h2><i>02.</i>Technical Expertise</h2>
+<p class="sub">Hover the cube to pause it. The cards on the right tilt with your cursor.</p>
+<div class="skills">
+<div class="scene"><div class="cube"><div class="face f1">PHP</div><div class="face f2">Laravel</div><div class="face f3">Python</div><div class="face f4">Django</div><div class="face f5">Vue.js</div><div class="face f6">React</div></div></div>
+<div class="skgrid">
+<div class="card tilt"><h3>Backend · PHP (5+ yrs)</h3><p>PHP, Laravel, Lumen, REST APIs, SOAP, multi-tenant architecture, RBAC</p></div>
+<div class="card tilt"><h3>Backend · Python (2+ yrs)</h3><p>Python, Django, Django REST Framework, FastAPI</p></div>
+<div class="card tilt"><h3>AI and LLM</h3><p>LLM integration, RAG, LangChain, LangGraph, AI chatbots, AI content generation</p></div>
+<div class="card tilt"><h3>Frontend</h3><p>Vue.js, React.js, JavaScript, jQuery, HTML5, CSS3, SCSS, Bootstrap</p></div>
+<div class="card tilt"><h3>Data, Cloud and Media</h3><p>MySQL, MariaDB, MongoDB, AWS S3, EC2, MinIO, FFmpeg, Bento4, Git, Linux, Postman</p></div>
+</div></div></div></section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="py-16 px-6 max-w-6xl mx-auto">
-        <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-            <span class="text-sky-400 mono">02.</span> Professional Experience
-        </h2>
-        <div class="space-y-8 border-l-2 border-slate-800 ml-3 pl-6">
+<section id="experience"><div class="wrap rv">
+<h2><i>03.</i>Professional Experience</h2>
+<p class="sub">From enterprise portals to an AI-powered LMS.</p>
+<div class="tl">
+<div class="job card"><div class="jh"><h3>Full Stack Developer <span>@ Middle East College, Oman</span></h3><span class="date mono">Jul 2025 – Oct 2026</span></div>
+<ul><li>Built and maintained a multi-tenant LMS (Laravel, Vue.js, MySQL, Bootstrap) with organization-based data isolation and role-based access control.</li>
+<li>Shipped LLM and RAG features: a student chatbot and an assessment generator that creates questions from uploaded Excel or Word files.</li>
+<li>Designed core modules: assessments, assignments, program and content management, and SIS integration.</li>
+<li>Resolved production issues and optimized backend queries and page-load performance.</li></ul>
+<div class="chips"><span class="chip">Laravel</span><span class="chip">Vue.js</span><span class="chip">MySQL</span><span class="chip">LLM</span><span class="chip">RAG</span></div></div>
 
-            <!-- Role 1 -->
-            <div class="relative">
-                <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-sky-400 border-4 border-[#0b0f19]"></div>
-                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                    <h3 class="text-lg font-bold text-white">Full Stack Developer <span class="text-sky-400">@ Middle East College, Oman</span></h3>
-                    <span class="mono text-xs text-slate-400">Jul 2025 – Oct 2026</span>
-                </div>
-                <ul class="list-disc list-inside text-slate-300 text-sm space-y-2 leading-relaxed">
-                    <li>Architected, built, and maintained a multi-tenant Learning Management System (Laravel, Vue.js, MySQL, Bootstrap) supporting academic and administrative operations with strict organization-based data isolation and RBAC.</li>
-                    <li>Engineered core LMS modules including automated assessments, program/content management, and Student Information System (SIS) integrations for faculty, staff, and students.</li>
-                    <li>Diagnosed critical production bottlenecks, optimized complex MySQL queries to reduce page-load times, and shipped responsive UI enhancements.</li>
-                </ul>
-            </div>
+<div class="job card"><div class="jh"><h3>Software Engineer <span>@ SATVAM Software Pvt. Ltd.</span></h3><span class="date mono">May 2024 – Jun 2025</span></div>
+<ul><li>Developed REST APIs and backend services in Django REST Framework alongside Laravel and Vue.js.</li>
+<li>Built a video platform on MinIO and AWS S3, using FFmpeg for encoding, decoding and optimization, and Bento4 for secure delivery.</li>
+<li>Led migration of legacy applications to modern codebases and optimized existing code.</li>
+<li>Delivered new modules and third-party integrations.</li></ul>
+<div class="chips"><span class="chip">Django REST</span><span class="chip">Laravel</span><span class="chip">FFmpeg</span><span class="chip">Bento4</span><span class="chip">MinIO / S3</span></div></div>
 
-            <!-- Role 2 -->
-            <div class="relative">
-                <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-indigo-400 border-4 border-[#0b0f19]"></div>
-                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                    <h3 class="text-lg font-bold text-white">Software Engineer <span class="text-indigo-400">@ SATVAM Softwares Pvt. Ltd.</span></h3>
-                    <span class="mono text-xs text-slate-400">May 2024 – Jun 2025</span>
-                </div>
-                <ul class="list-disc list-inside text-slate-300 text-sm space-y-2 leading-relaxed">
-                    <li>Built and scaled enterprise web applications and media-streaming workflows using Laravel, Vue.js, REST APIs, and MySQL within a cross-functional engineering team.</li>
-                    <li>Delivered custom application modules, third-party API integrations, and cloud object storage pipelines (MinIO/S3, FFmpeg) while resolving high-priority stability and performance issues.</li>
-                </ul>
-            </div>
+<div class="job card"><div class="jh"><h3>Software Engineer <span>@ CODETRU, Hyderabad</span></h3><span class="date mono">Jul 2021 – Apr 2024</span></div>
+<ul><li>Built workflow-driven enterprise applications with Laravel, Lumen, React.js, Kotlin and MySQL for projects with 100+ users and stakeholders.</li>
+<li>Developed REST APIs, dashboards and role-based access control powering core business workflows.</li>
+<li>Worked in 4-member agile pods and larger cross-functional teams, from new builds to optimization and migration.</li></ul>
+<div class="chips"><span class="chip">Laravel</span><span class="chip">Lumen</span><span class="chip">React.js</span><span class="chip">Kotlin</span></div></div>
 
-            <!-- Role 3 -->
-            <div class="relative">
-                <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-purple-400 border-4 border-[#0b0f19]"></div>
-                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                    <h3 class="text-lg font-bold text-white">Software Engineer <span class="text-purple-400">@ CODETRU</span></h3>
-                    <span class="mono text-xs text-slate-400">Jul 2021 – Apr 2024</span>
-                </div>
-                <ul class="list-disc list-inside text-slate-300 text-sm space-y-2 leading-relaxed">
-                    <li>Developed business and workflow-driven enterprise applications using Laravel, Lumen, React.js, Kotlin, and MySQL across 4-member agile pods and large cross-functional teams serving 100+ enterprise stakeholders.</li>
-                    <li>Designed and implemented secure REST APIs, interactive React dashboards, and granular role-based access control (RBAC) systems powering core client operations.</li>
-                </ul>
-            </div>
+<div class="job card"><div class="jh"><h3>Internships</h3><span class="date mono">Sep 2020 – Jul 2021</span></div>
+<ul><li>Zoho Developer Intern, ARSCCOM Zoho Partners (Mar – Jul 2021): business automation and application configuration for clients.</li>
+<li>Android Developer Intern, KALYT Technologies (Sep – Dec 2020): Android feature development.</li></ul></div>
+</div></div></section>
 
-            <!-- Internships -->
-            <div class="relative">
-                <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-600 border-4 border-[#0b0f19]"></div>
-                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-1">
-                    <h3 class="text-base font-semibold text-white">Zoho Developer Intern <span class="text-slate-400">@ ARSCCOM Zoho Partners</span></h3>
-                    <span class="mono text-xs text-slate-400">Mar 2021 – Jul 2021</span>
-                </div>
-                <p class="text-slate-400 text-sm mb-4">Configured Zoho CRM workflows, Deluge scripts, and business automation solutions for client implementations.</p>
+<section id="ai"><div class="wrap rv"><div class="card ai">
+<h2><i>04.</i>AI and LLM Work</h2>
+<p class="sub">Applied generative AI inside a real education platform.</p>
+<div class="grid3">
+<div class="card tilt"><h3>Student Chatbot</h3><p>A RAG-based assistant that answers student questions with the right institutional information instead of generic replies.</p></div>
+<div class="card tilt"><h3>Question Generator</h3><p>Faculty upload an .xlsx or .docx file and the system generates hundreds of questions for assessments and assignments.</p></div>
+<div class="card tilt"><h3>Digital Education</h3><p>Both features sit inside the multi-tenant LMS, supporting digital teaching and assessment for faculty and students.</p></div>
+</div></div></div></section>
 
-                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-1">
-                    <h3 class="text-base font-semibold text-white">Android Developer Intern <span class="text-slate-400">@ KALYT Technologies India Pvt. Ltd.</span></h3>
-                    <span class="mono text-xs text-slate-400">Sep 2020 – Dec 2020</span>
-                </div>
-                <p class="text-slate-400 text-sm">Contributed to mobile application development and feature implementation.</p>
-            </div>
+<section id="projects"><div class="wrap rv">
+<h2><i>05.</i>Key Projects</h2>
+<p class="sub">Selected work across LMS, media and enterprise workflow.</p>
+<div class="grid2">
+<div class="card tilt"><h3>MEC Future – Multi-Tenant LMS</h3><p class="tech mono">Laravel · Vue.js · MySQL · Bootstrap · jQuery · LLM/RAG</p><p>Learning management system covering assessments, assignments, programs, content, reporting, RBAC, SIS integration and organization-level data isolation, extended with AI chatbot and question generation.</p></div>
+<div class="card tilt"><h3>ASMR STARS – Video Platform</h3><p class="tech mono">Vue.js · Laravel · Django REST · MinIO · AWS S3 · FFmpeg · Bento4</p><p>Video platform with object storage, encoding and optimization pipelines, and secure content delivery.</p></div>
+<div class="card tilt"><h3>Partner Portal and Workforce Apps</h3><p class="tech mono">React.js · Laravel · Lumen · MySQL</p><p>Enterprise portals and internal workflow applications with dashboards, APIs and multi-role access control.</p></div>
+<div class="card tilt"><h3>AI and RAG Explorations</h3><p class="tech mono">Python · Django · FastAPI · LangChain · LangGraph</p><p>AI-agent and retrieval-augmented applications that connect LLMs to backend APIs.</p></div>
+</div></div></section>
 
-        </div>
-    </section>
+<section id="contact"><div class="wrap rv">
+<h2><i>06.</i>Let’s Work Together</h2>
+<p class="sub">I am available to join immediately. B.E. in Electrical and Electronics Engineering, Jain Institute of Technology, Davangere (2019).</p>
+<div class="ci">
+<a href="mailto:meghrajdvg.pn253@gmail.com"><small>Email</small>meghrajdvg.pn253@gmail.com</a>
+<a href="tel:+917019675133"><small>Phone</small>+91 70196 75133</a>
+<a href="https://linkedin.com/in/megharaj-p-n" target="_blank" rel="noopener"><small>LinkedIn</small>linkedin.com/in/megharaj-p-n</a>
+<a href="https://github.com/MegharajPN" target="_blank" rel="noopener"><small>GitHub</small>github.com/MegharajPN</a>
+</div></div></section>
+<footer>© 2026 Megharaj P N · Bengaluru, India</footer>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-16 px-6 max-w-6xl mx-auto">
-        <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-            <span class="text-sky-400 mono">03.</span> Key Projects
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="glass p-6 rounded-2xl hover:border-sky-500/40 transition">
-                <h3 class="text-lg font-bold text-white mb-1">MEC Future – Multi-Tenant LMS</h3>
-                <p class="mono text-xs text-sky-400 mb-3">Laravel • Vue.js • MySQL • Bootstrap • jQuery • AWS S3</p>
-                <p class="text-slate-300 text-sm leading-relaxed">Comprehensive Learning Management System supporting assessments, academic program management, reporting dashboards, role-based access control, SIS integration, and multi-tenant data isolation.</p>
-            </div>
-            <div class="glass p-6 rounded-2xl hover:border-sky-500/40 transition">
-                <h3 class="text-lg font-bold text-white mb-1">ASMR STARS – Video Streaming Platform</h3>
-                <p class="mono text-xs text-indigo-400 mb-3">Laravel • Vue.js • MinIO S3 • FFmpeg • Linux</p>
-                <p class="text-slate-300 text-sm leading-relaxed">High-volume video platform featuring S3-compatible object storage integration, automated media-processing workflows, and responsive playback interfaces.</p>
-            </div>
-            <div class="glass p-6 rounded-2xl hover:border-sky-500/40 transition">
-                <h3 class="text-lg font-bold text-white mb-1">Partner Portal & Enterprise Workflow Suite</h3>
-                <p class="mono text-xs text-purple-400 mb-3">React.js • Laravel • Lumen • MySQL • REST APIs</p>
-                <p class="text-slate-300 text-sm leading-relaxed">Enterprise portals and internal workforce applications equipped with real-time analytics dashboards, high-throughput REST APIs, and multi-role access control.</p>
-            </div>
-            <div class="glass p-6 rounded-2xl hover:border-sky-500/40 transition">
-                <h3 class="text-lg font-bold text-white mb-1">Applied AI & RAG Explorations (Personal)</h3>
-                <p class="mono text-xs text-emerald-400 mb-3">Python • Django • FastAPI • LangChain • RAG</p>
-                <p class="text-slate-300 text-sm leading-relaxed">Exploratory AI-agent and Retrieval-Augmented Generation (RAG) microservices connecting Large Language Models with structured backend APIs.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education & Footer -->
-    <footer class="py-12 px-6 border-t border-slate-800/80 text-center text-sm text-slate-400">
-        <div class="max-w-6xl mx-auto">
-            <p class="text-white font-semibold mb-1">Education: Bachelor of Engineering (Electrical & Electronics Engineering)</p>
-            <p class="mb-6">Jain Institute of Technology, Davangere • Graduated 2019</p>
-            <p class="mono text-xs text-slate-500">Built by Megharaj P N • Ready for immediate deployment on GitHub Pages / Netlify / Vercel</p>
-        </div>
-    </footer>
+<script>
+(function(){
+// theme toggle
+var root=document.documentElement,btn=document.getElementById('theme');
+btn.onclick=function(){var dark=root.getAttribute('data-theme')?root.getAttribute('data-theme')==='dark':matchMedia('(prefers-color-scheme: dark)').matches;root.setAttribute('data-theme',dark?'light':'dark')};
+// typing roles
+var roles=['PHP · Laravel Specialist (5+ yrs)','Django REST · FastAPI Developer','Vue.js · React.js Engineer','LLM · RAG Application Builder'],ri=0,ci=0,del=false,el=document.getElementById('typed');
+(function t(){var s=roles[ri];el.textContent=s.slice(0,ci);if(!del&&ci++===s.length){del=true;return setTimeout(t,1600)}if(del&&ci--===0){del=false;ri=(ri+1)%roles.length}setTimeout(t,del?30:60)})();
+// reveal
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.08});
+document.querySelectorAll('.rv').forEach(function(n){io.observe(n)});
+// 3D tilt
+document.querySelectorAll('.tilt').forEach(function(c){
+c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(800px) rotateY('+(x*12)+'deg) rotateX('+(-y*12)+'deg) scale(1.02)'});
+c.addEventListener('mouseleave',function(){c.style.transform=''})});
+// three.js hero
+try{if(!window.THREE)return;
+var cv=document.getElementById('bg'),hero=document.getElementById('hero'),R=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:true}),S=new THREE.Scene(),C=new THREE.PerspectiveCamera(55,1,.1,100);C.position.z=8;
+var ico=new THREE.Mesh(new THREE.IcosahedronGeometry(2.3,1),new THREE.MeshBasicMaterial({color:0x14a9b8,wireframe:true,transparent:true,opacity:.6}));
+var inner=new THREE.Mesh(new THREE.OctahedronGeometry(1.2,0),new THREE.MeshBasicMaterial({color:0x8b5cf6,wireframe:true,transparent:true,opacity:.7}));
+var ring=new THREE.Mesh(new THREE.TorusGeometry(3.3,.02,8,100),new THREE.MeshBasicMaterial({color:0x6366f1,transparent:true,opacity:.6}));
+var pos=new Float32Array(900);for(var i=0;i<900;i++)pos[i]=(Math.random()-.5)*22;
+var pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pos,3));
+var pts=new THREE.Points(pg,new THREE.PointsMaterial({color:0x38bdf8,size:.05,transparent:true,opacity:.7}));
+var grp=new THREE.Group();grp.add(ico,inner,ring);S.add(grp,pts);
+var mx=0,my=0;addEventListener('mousemove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+function rs(){var w=hero.clientWidth,h=hero.clientHeight;R.setPixelRatio(Math.min(devicePixelRatio,2));R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix();grp.position.x=w>860?3.4:0;grp.position.y=w>860?0:2.2;grp.scale.setScalar(w>860?1:.7)}
+rs();addEventListener('resize',rs);
+(function an(){ico.rotation.x+=.003;ico.rotation.y+=.004;inner.rotation.x-=.006;inner.rotation.y-=.005;ring.rotation.x+=.004;ring.rotation.y+=.002;pts.rotation.y+=.0006;
+grp.rotation.y+=(mx*.8-grp.rotation.y)*.03;grp.rotation.x+=(my*.6-grp.rotation.x)*.03;R.render(S,C);requestAnimationFrame(an)})();
+}catch(e){}
+})();
+</script>
 </body>
 </html>
